@@ -1,0 +1,51 @@
+/*Selector universal*/
+*{
+    padding: 0; 
+    margin: 0;
+}
+/*Selector de tipo: Etiqueta*/
+body{
+    background-color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    color:white;
+}
+/*Selector de tipo: Clase*/
+.tarjeta {
+    width: 320px;
+    background-color: antiquewhite;
+    border-radius: 3%;
+
+    /*Centrando elementos*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /*separacion*/
+    display: inline-block;
+    transition: all 0.4s ease-in-out; /*Transicion suave*/
+
+}
+/*pseudoclase hover para crear animaciones*/
+.tarjeta  :hover{background-color: blueviolet;
+    transform: scale(1.05);
+    transform: rotate(3deg);
+    }
+
+.tarjeta .caja-contenedora{
+    width: 200px;
+    
+}
+.tarjeta img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.tarjeta p{
+    font-size: 20px;
+} 
